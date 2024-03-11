@@ -1,0 +1,21 @@
+package herencia1;
+
+class Persona {
+	//Atributos
+	String nombre;
+	int edad;
+	double estatura;
+	double peso;
+}
+
+class Empleado extends Persona{
+	double salario;
+	boolean empleadodelmes;
+	Empleado(String nombre, int edad, double estatura, double peso, double salario, boolean empleadodelmes){
+		this.salario= salario;
+		this.empleadodelmes=empleadodelmes;
+		this.nombre= nombre;
+		this.edad= edad;
+		this.estatura= estatura;
+	}
+}

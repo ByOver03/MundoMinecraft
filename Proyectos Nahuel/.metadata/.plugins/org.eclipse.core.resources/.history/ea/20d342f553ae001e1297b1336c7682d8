@@ -1,0 +1,5 @@
+package herenciapractica;
+
+public class Pulpo {
+	boolean nadar;
+}

@@ -1,0 +1,12 @@
+package herencia1;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Empleado e= new Empleado("Nahuel", 20, 170.5, 55, 5000.05, true);
+//		
+//		System.out.println(e.getNombre());
+		e.mostrarinformacion();
+	}
+
+}

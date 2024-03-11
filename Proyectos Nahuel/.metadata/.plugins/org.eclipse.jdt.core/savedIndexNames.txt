@@ -1,0 +1,6 @@
+INDEX VERSION 1.134+C:\Users\ciclesgs.EAAULA111W-005\Desktop\Cosillas\Proyectos Nahuel\.metadata\.plugins\org.eclipse.jdt.core
+2393563997.index
+425194552.index
+3160895277.index
+1865797976.index
+1759711969.index

@@ -1,0 +1,27 @@
+package herencia1;
+
+public class Empleado extends Persona{
+	double salario;
+	boolean empleadodelmes;
+	String estatura;
+	
+	Empleado(){
+		
+	}
+	public Empleado(String nombre, int edad, double estatura, double peso, double salario, boolean empleadodelmes){
+		this.salario= salario;
+		this.empleadodelmes=empleadodelmes;
+		this.setNombre(nombre);
+		this.edad= edad;
+		this.estatura= "Alto";
+		super.estatura= estatura;
+		this.peso= peso;
+	}
+	@Override
+	void mostrarinformacion() {
+		super.mostrarinformacion();
+		System.out.println(salario);
+		System.out.println(empleadodelmes);
+		System.out.println(estatura);
+	}
+}

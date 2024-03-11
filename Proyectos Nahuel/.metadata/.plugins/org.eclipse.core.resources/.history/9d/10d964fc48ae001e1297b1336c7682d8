@@ -1,0 +1,12 @@
+package herencia2;
+
+public class Alumno extends herencia1.Persona{
+
+	double notaFinal;
+	boolean empleado;
+	
+	Alumno(double notaFinal, int edad){
+		this.notaFinal= notaFinal;
+		this.edad= edad;
+	}
+}

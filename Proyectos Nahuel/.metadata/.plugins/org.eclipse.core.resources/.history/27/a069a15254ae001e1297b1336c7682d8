@@ -1,0 +1,11 @@
+package herenciapractica;
+
+public class Animal {
+	int patas;
+	String genero;
+	boolean nadar;
+	
+	public void metodosuperclase() {
+		
+	}
+}

@@ -1,0 +1,12 @@
+package herenciapractica;
+
+public class Perro {
+	String ladra;
+	String raza;
+	
+	
+	
+	public void ladrar() {
+		Math.random();
+	}
+}

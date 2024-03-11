@@ -1,0 +1,23 @@
+package herencia1;
+
+public class Persona {
+	//Atributos
+	private String nombre;
+	protected int edad;
+	public double estatura;
+	double peso;
+	public String getNombre() {
+		return nombre;
+	}
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+	void mostrarinformacion() {
+		System.out.println(nombre);
+		System.out.println(edad);
+		System.out.println(estatura);
+		System.out.println(peso);
+	}
+	
+}
+

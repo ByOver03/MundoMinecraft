@@ -1,0 +1,6 @@
+package herencia2;
+
+public class Alumno extends herencia1.Persona{
+
+	
+}
