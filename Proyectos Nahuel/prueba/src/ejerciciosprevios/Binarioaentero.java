@@ -13,6 +13,7 @@ public class Binarioaentero {
 	String resultado="Aqui tienes tu numero convertido a decimal: ";
 	int salida= conversionbinario(numerousuario);
 	System.out.println(resultado+ salida);
+	sc.close();
 }
 	/*Creamos una nueva funcion para convertir el numero binario a decimal
 	 *Iniciamos la variable entre parentesis como String para poder pasarlo a char sin que genere ningun problema
