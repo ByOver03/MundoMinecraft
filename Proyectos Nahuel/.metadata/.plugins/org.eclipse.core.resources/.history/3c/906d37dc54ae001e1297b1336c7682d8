@@ -1,6 +1,0 @@
-package herenciapractica;
-
-public class Pulpo {
-	boolean sacaTinta;
-	
-}

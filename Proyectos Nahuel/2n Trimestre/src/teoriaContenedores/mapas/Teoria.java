@@ -39,30 +39,30 @@ public class Teoria {
          * isEmpty() -- duevuelve un boolean -- nos dice si esta vacia
          * 
          */
-        String valor= tm.put(5, "Hola");
-        tm.put(-1, "Eres");
-        tm.put(0, "Un");
-        tm.put(99, "Hola");
-        tm.put(3, "Marica");
+        // String valor= tm.put(5, "Hola");
+        // tm.put(-1, "Eres");
+        // tm.put(0, "Un");
+        // tm.put(99, "Hola");
+        // tm.put(3, "Marica");
 
-        //System.out.println(tm.get(99));
+        // //System.out.println(tm.get(99));
 
-        //tm.replace(3, "adios");
-        //System.out.println(tm.get(3));
+        // //tm.replace(3, "adios");
+        // //System.out.println(tm.get(3));
 
-        ArrayList<String> al= new ArrayList<>(tm.values());
+        // ArrayList<String> al= new ArrayList<>(tm.values());
 
-        for (String string : al) {
-            System.out.println(string);
-        }
+        // for (String string : al) {
+        //     System.out.println(string);
+        // }
 
-        TreeSet<Integer> ts = new TreeSet<>(tm.keySet());
+        // TreeSet<Integer> ts = new TreeSet<>(tm.keySet());
 
-        for (Integer integer : ts) {
-            System.out.println(integer);
-        }
+        // for (Integer integer : ts) {
+        //     System.out.println(integer);
+        // }
 
-        Set<Entry<Integer, String>> ss = tm.entrySet();
+        // Set<Entry<Integer, String>> ss = tm.entrySet();
 
         
 
@@ -99,6 +99,11 @@ public class Teoria {
          *  
          *  Similar al HasMap
          *  Los valores tienen orden de insercion
+         * 
+         * 
+         * 
+         *  enterySet -- Map.Entry -- Metodos
+         *  getValue() getKey()
          */
 
          //Como recorrer un MAPA
@@ -114,27 +119,32 @@ public class Teoria {
 
          //Recorrer Valores
 
-            for (String string : miMapa.values()) {
-                System.out.println(string);
-            }
+            // for (String string : miMapa.values()) {
+            //     System.out.println(string);
+            // }
 
-            Collection<String> valores = miMapa.values();
+            // Collection<String> valores = miMapa.values();
 
-            for (String string : valores) {
-                System.out.println(string);
-            }
+            // for (String string : valores) {
+            //     System.out.println(string);
+            // }
 
             //Recorrer las claves
 
+            // for (Integer integer : miMapa.keySet()) {
+            //     System.out.println(integer);
+            // }
+
+            // Collection<Integer> claves= miMapa.keySet();
+
+            // for (Integer integer : claves) {
+            //     System.out.println(integer);
+            // }
+
+            //Recorer Claves y Valores
+
             for (Integer integer : miMapa.keySet()) {
-                System.out.println(integer);
+                System.out.println("Clave: " +integer + "Valor " + miMapa.get(integer));
             }
-
-            Collection<Integer> claves= miMapa.keySet();
-
-            for (Integer integer : claves) {
-                System.out.println(integer);
-            }
-
     }
 }
