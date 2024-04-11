@@ -1,8 +1,11 @@
 package recetas;
 
 public class Ingrediente {
-    String nombre;
     double precio;
-    int calorias;
-    
+    String nombre;
+
+    Ingrediente(String nombre, double precio){
+        this.precio= precio;
+        this.nombre= nombre;
+    }
 }
