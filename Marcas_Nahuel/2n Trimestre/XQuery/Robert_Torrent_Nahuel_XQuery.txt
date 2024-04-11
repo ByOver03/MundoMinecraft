@@ -1,0 +1,12 @@
+1-
+    for $autor in //libros//libro
+    return $autor //autor
+2-
+    
+
+3-
+
+4-
+    for $lib in //libros/libro
+    let $numeroAutores  := count ($lib/autor)
+    return <Titulo><Id> ($lib/@id/string())</Id>, {$lib/titulo} <numeroAutores>{$numeroAutores}</numeroAutores></Titulo>
