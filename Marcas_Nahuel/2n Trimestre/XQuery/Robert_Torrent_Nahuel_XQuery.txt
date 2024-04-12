@@ -9,4 +9,14 @@
 4-
     for $lib in //libros/libro
     let $numeroAutores  := count ($lib/autor)
-    return <Titulo><Id> ($lib/@id/string())</Id>, {$lib/titulo} <numeroAutores>{$numeroAutores}</numeroAutores></Titulo>
+    
+5- 
+    for $var in /libros/libro
+    let $autores := count($var/autor)
+    return ($var/titulo, <autores>{$autores}</autores>)
+6-
+    for $libro in /libros/libro
+    let $autores := count($libro/autor)
+    return ($libro/titulo, <id>{$libro/@id/string()}</id>, <autores>{$autores}</autores>)
+7-
+

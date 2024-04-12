@@ -49,4 +49,8 @@ public class Receta {
     public void setPrecioTotal(double precioTotal) {
         this.precioTotal = precioTotal;
     }
+
+    int establecerPrecioReceta(){
+    return 0;
+    }
 }
