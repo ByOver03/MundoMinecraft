@@ -6,6 +6,6 @@ public class Test {
     }
     //Recorrer coleccione BotigaDeFruites con un iterator
     static void testIterator(){
-
+        Iterator <BotigaDeFruites> ansdkhja= fruites.iterator();
     }
 }
