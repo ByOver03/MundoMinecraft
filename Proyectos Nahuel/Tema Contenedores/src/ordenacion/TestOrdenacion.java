@@ -6,14 +6,11 @@ import java.util.TreeSet;
 public class TestOrdenacion {
     public static void main(String[] args) {
         Set<Humano> p= new TreeSet<>();
+        System.out.println(p);
 
     }
     
 }
-
-/**
- Humano
- */
 class Humano {
     String nombre;
     int edad;

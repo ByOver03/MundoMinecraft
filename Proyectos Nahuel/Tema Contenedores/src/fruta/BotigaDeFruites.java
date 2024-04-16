@@ -20,10 +20,6 @@ public class BotigaDeFruites {
     //Metodo para eliminar una fruta de la lista
     void eliminarFruit(String nom){
 
-        
-        
-
-
         Fruit numeroActual;
         
         Iterator<Fruit> fruit = frutas.iterator();
