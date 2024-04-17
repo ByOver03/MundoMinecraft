@@ -1,5 +1,6 @@
 package coches;
 
+
 import java.util.Iterator;
 import java.util.TreeSet;
 
@@ -18,8 +19,14 @@ public class Test {
         carrcoch.añadirCoche(c);
         carrcoch.añadirCoche(d);
         carrcoch.añadirCoche(e);
+        
 
-        comprovaIterator(coche);
+        carrcoch.eliminarCoche("Toyota");
+
+
+        comprovaIterator(carrcoch.coches);
+
+        System.out.println(carrcoch.getGuanyador());
     }
     
     //Metodo para recorrer la coleccion de la clase CarreraCoches
@@ -27,13 +34,10 @@ public class Test {
         
         Iterator<Coche>coche= coches.iterator();
         Coche c;
-        do{
-            c = coche.next();
-            System.out.println(c.toString());
-        }while(coche.hasNext());
         while (coche.hasNext()) {
-            c= coche.next();
+            c=coche.next();
             System.out.println(c.toString());
+            
         }
     } 
 }

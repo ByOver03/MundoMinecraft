@@ -14,7 +14,7 @@ public class CarreraCoches {
     //Metodo para añadir un coche
     void añadirCoche(Coche coche){
         coches.add(coche);
-        System.out.println("Se ha añadido correctamente");
+        
     }
 
     //Metodo para eliminar un coche
@@ -33,9 +33,23 @@ public class CarreraCoches {
 
     //Metodo para retornar el ganador
     Coche getGuanyador(){
-        Coche guanyador= null;
-        //Encontrar el coche con mayor velocidad
         
-        return guanyador;
+        double maximo = 0; // Inicializar con el valor mínimo posible de double
+        
+        for (Coche coche : coches) {
+                if (coche.getVelocidad_maxima() > maximo) {
+                    maximo = coche.getVelocidad_maxima();
+                }
+        }
+        Iterator<Coche> coche = coches.iterator();
+        Coche c;
+        do{
+            c=coche.next();
+            if(c.getVelocidad_maxima()== maximo){
+                return c;
+            }
+        }while(coche.hasNext());
+        return null;
+        
     }
 }
