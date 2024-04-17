@@ -32,7 +32,12 @@ public class Personatge implements Comparable<Personatge> {
     //Metodo compareTo para ordenarlos alfabeticamente por el nombre
     @Override
     public int compareTo(Personatge o) {
-        return 0;
+        return this.getNombre().compareTo(o.getNombre());
+    }
+
+    @Override
+    public String toString() {
+        return "Nombre: " + getNombre() + ", Alias: " + getAlias();
     }
     
 }

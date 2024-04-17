@@ -11,7 +11,7 @@ import java.util.List;
 public class Funcions implements  Serializable{
 
     //Metodo para leer los personajes
-    public static void llegirPersonatge(List<Personatge> personatge, String fichero) {
+    public static void escriurePersonatges(List<Personatge> personatge, String fichero) {
         try(ObjectOutputStream ous = new ObjectOutputStream(new FileOutputStream(fichero))) {
             ous.writeObject(personatge);
 
@@ -21,7 +21,7 @@ public class Funcions implements  Serializable{
     }
 
     //Metodo para escribir a los personajes
-    public static List<Personatge> leerFicheroObjectToArrayClass(String fichero) {
+    public static List<Personatge> llegirPersonatges(String fichero) {
         List<Personatge> personatge= null;
 
         try(ObjectInputStream ois = new ObjectInputStream(new FileInputStream(fichero))) {
