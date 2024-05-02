@@ -26,6 +26,12 @@ public class App {
             }else{
                 System.out.println(valor + " No es mayor a 10");
             }
+
+            if(menorOIgual.test(valor)){
+                System.out.println(valor + " Es mayor que 10");
+            }else{
+                System.out.println(valor + " No es mayor a 10");
+            }
         }
 
         /*Teoria ed no entra:
