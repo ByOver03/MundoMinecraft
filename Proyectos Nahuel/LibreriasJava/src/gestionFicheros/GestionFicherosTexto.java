@@ -1,4 +1,4 @@
-package tema8.src.gestionFicheros;
+package gestionFicheros;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
