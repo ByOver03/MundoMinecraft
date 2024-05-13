@@ -2,7 +2,7 @@ package scanner;
 
 import java.util.Scanner;
 
-public class LAsdas {
+public class Scan {
 
 	public static int ScannerInteger(int integer) {
 		Scanner leer = new Scanner(System.in);
@@ -23,6 +23,12 @@ public class LAsdas {
 		doble = leer.nextDouble();
 		leer.close();
 		return doble;
+	}
+	public static boolean ScannerBoolean(boolean sino){
+		Scanner leer = new Scanner(System.in);
+		sino= leer.nextBoolean();
+		leer.close();
+		return sino;
 	}
 
 }
