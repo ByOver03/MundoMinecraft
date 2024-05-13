@@ -30,5 +30,12 @@ public class Scan {
 		leer.close();
 		return sino;
 	}
+	public static char DevuelveChar(char character){
+		Scanner leer= new Scanner(System.in);
+		String caracter = leer.nextLine();
+		character = caracter.charAt(0);
+		leer.close();
+		return character;
+	}
 
 }
