@@ -3,8 +3,7 @@ package generador;
 public class GeneradorDeMenus {
 
     //Metodo que Imprime un menu de forma visual
-    public static void generaMenus(int cantidadOpciones, String[] menu){
-        menu= new String[cantidadOpciones];
+    public static void generaMenus(String[] menu){
         menu[0]= "Indique La opcion que usted quiera";
 
         int i= 1;
