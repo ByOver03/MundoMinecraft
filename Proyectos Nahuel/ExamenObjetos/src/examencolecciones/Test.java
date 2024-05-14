@@ -11,9 +11,9 @@ public class Test {
         String file = "plantilla.dat";
         //Mostramos la informacion del fichero
         Map <Integer, Jugador> plantilla2 = TratamientoFicheros.llegirPersonatges(file);
-        for (Integer string : plantilla2.keySet()) {
-            System.out.println("Dorsal: " + string + " Jugador: " + plantilla2.get(string).toString());
-        }
+//        for (Integer string : plantilla2.keySet()) {
+//            System.out.println("Dorsal: " + string + " Jugador: " + plantilla2.get(string).toString());
+//        }
         //Creamos las variables necesarias
         Map<Integer, Jugador> plantilla= new HashMap<>();
         Scanner read = new Scanner(System.in);
@@ -28,8 +28,8 @@ public class Test {
         TratamientoFicheros.escriurePersonatges(plantilla, file);
         
         //Volvemos a mostrar la infromacion del fichero
-        for (Integer string : plantilla3.keySet()) {
-            System.out.println("Dorsal: " + string + " Jugador: " + plantilla2.get(string).toString());
-        }
+//        for (Integer string : plantilla3.keySet()) {
+//            System.out.println("Dorsal: " + string + " Jugador: " + plantilla2.get(string).toString());
+//        }
     }
 }
