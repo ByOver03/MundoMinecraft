@@ -1,17 +1,17 @@
 package primo;
 
-import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Stream;
 
 public class Test {
     
     public static void main(String[] args) {
-        Integer[]numeros= new Integer[100];
-
         
+        List<Integer> numeros= new ArrayList<>();
         numeros= Primo.cienNumeros();
-        
-        System.out.println(Arrays.deepToString(numeros));
-        numeros= Primo.ordenarMayorMenor(numeros);
+        System.out.println(numeros.toString());
+        Stream<Integer>s = numeros.stream();
         
         
         

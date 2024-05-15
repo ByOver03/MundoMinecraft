@@ -1,31 +1,22 @@
 package primo;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Primo {
     static boolean esPrimer(Integer n){
         
         
         return false;
     }
-    static Integer[] cienNumeros(){
-        Integer[] almacenarNumeros= new Integer[100];
+    
+    static List<Integer> cienNumeros(){
+        List<Integer> numeros = new ArrayList<>();
         for (int i = 0; i < 99; i++) {
-            almacenarNumeros[i] =(int)(Math.random()*1000)+1;
+            numeros.add((int)(Math.random()*1000)+1);
         }
-        return almacenarNumeros;
+        return numeros;
     }
 
-    static Integer[] ordenarMayorMenor(Integer[] array){
-        int n = array.length;
-        int numero;
-        
-        for(int i = 0; i<n; i++){
-            if(array[i]<array[i-1]){
-                numero=array[i];
-                array[i]= array [i-1];
-                array[i-1] = numero;
-            }
-        }
-        
-    return array;
-    }
+    
 }
