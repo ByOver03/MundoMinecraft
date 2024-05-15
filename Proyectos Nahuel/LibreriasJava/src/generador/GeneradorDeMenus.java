@@ -19,11 +19,13 @@ public class GeneradorDeMenus {
         }
         System.out.println("*********************************************************");
     }
+    
 
-    //Metodo que devuelve el metodo que elige el usuario
-    public static void SwitchOpciones(){
-        
+    public static void main(String[] args) {
+        String[] menu= {"kdsksnv", "baia", "mierda", "de vida"};
+        generaMenus(menu);
     }
+
 }
 
     
