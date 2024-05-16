@@ -80,6 +80,7 @@ public class Test {
         }
     
         //Metodo para listar los ingredientes registrados
+        @SuppressWarnings({ "rawtypes", "unchecked" })
         static void  mostrarIngredientes(Scanner leer, HashSet<Ingrediente> ingredientes){
             System.out.println("Como desea que le aparezcan los ingredientes?");
             System.out.println("[1] Ordenado alfabeticamente\n" +
@@ -103,6 +104,7 @@ public class Test {
         }
     
         //Metodo para listar las recetas registradas
+        @SuppressWarnings({ "rawtypes", "unchecked" })
         static void mostrarRecetas(Scanner leer, HashSet<Receta> recetas){
             System.out.println("Como desea que le aparezcan las recetas?");
             System.out.println("[1] Ordenado alfabeticamente\n" +

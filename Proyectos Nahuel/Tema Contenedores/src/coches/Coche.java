@@ -1,5 +1,6 @@
 package coches;
 
+@SuppressWarnings("rawtypes")
 public class Coche implements Comparable{
     String nombre;
     private double velocidad_maxima;

@@ -33,9 +33,9 @@ public class Test {
         bessons.put(parella2, 0);
         bessons.put(parella3, 0);
         //Cuando se acabe el viaje se mostrara una lista de todos los gemelos ordenados por nombre, otra con las velocidades de las naves, otro del tiempo de vuelo  y otra de las diferencias de edad
-        List<Besso> gemelos;
-        List<NauEspacial> velocidadesNaves;
-        List<NauEspacial> tiempoViaje;
+        //List<Besso> gemelos;
+        //List<NauEspacial> velocidadesNaves;
+        //List<NauEspacial> tiempoViaje;
         //velocidades (0.7,0.8y0.9)
         //Las velocidades seran assignadas de manera aleatoria a cada una de las naves
 

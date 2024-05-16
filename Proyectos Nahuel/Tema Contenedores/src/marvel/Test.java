@@ -3,16 +3,15 @@ package marvel;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Comparator;
 import java.util.Map;
 import java.util.HashMap;
-import java.util.Iterator;
 
 public class Test {
+    @SuppressWarnings({ "rawtypes", "unchecked" })
     public static void main(String[] args) {
         
         //Declaramos la clase funcions para escribir a los personajes en un fichero Binario
-        Funcions f = new Funcions();
+        //Funcions f = new Funcions();
 
         //Establecemos la direccion del fichero
         String fichero= "Marvel.dat";
@@ -20,7 +19,7 @@ public class Test {
         //Declaramos las listas necesarias
         List<Personatge> personatges= new ArrayList<>();
         Map<Personatge, List<Superpoder>> perssup= new HashMap<>();
-        Iterator<Personatge> personajes = personatges.iterator();
+        //Iterator<Personatge> personajes = personatges.iterator();
         
 
         //Creamos y añadimos a los personajes a la lista
@@ -85,8 +84,8 @@ public class Test {
         }
 
         //Escribimos y leemos en el fichero binario
-        f.escriurePersonatges(personatges, fichero);
-        f.llegirPersonatges(fichero);
+        Funcions.escriurePersonatges(personatges, fichero);
+        Funcions.llegirPersonatges(fichero);
 
         
     }

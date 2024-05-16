@@ -8,7 +8,6 @@ import java.io.ObjectOutputStream;
 import java.io.Serializable;
 import java.util.List;
 import java.util.Map;
-import java.util.Set;
 
 public class Funcions implements Serializable {
     //Metodo para leer el archivo binario
@@ -21,6 +20,7 @@ public class Funcions implements Serializable {
         }
     }
     //Metodo para leer el fichero binario
+    @SuppressWarnings("unchecked")
     public static Map<List<Besso>, Integer> llegirPersonatges(String fichero) {
         Map<List<Besso>, Integer> plantilla= null;
 

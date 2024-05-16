@@ -21,6 +21,7 @@ public class Funcions implements  Serializable{
     }
 
     //Metodo para escribir a los personajes
+    @SuppressWarnings("unchecked")
     public static List<Personatge> llegirPersonatges(String fichero) {
         List<Personatge> personatge= null;
 

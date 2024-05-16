@@ -1,9 +1,6 @@
 package stream;
 
 import java.util.*;
-import java.util.function.Consumer;
-import java.util.function.Function;
-import java.util.function.Predicate;
 import java.util.stream.*;
 
 public class Test {
@@ -129,14 +126,14 @@ public class Test {
 //		System.out.println(sumaEdades);
 		
 			
-		Stream<Integer> streamEnteros = Stream.of(4, 3, 7, 1, 0, 8, 9, 3, 4, 2, 1, 6, 8, 1, 0, 2, 3);
-		Stream<Integer> streamNegativos = Stream.of(-1, -6, -3, -3);
+		//Stream<Integer> streamEnteros = Stream.of(4, 3, 7, 1, 0, 8, 9, 3, 4, 2, 1, 6, 8, 1, 0, 2, 3);
+		//Stream<Integer> streamNegativos = Stream.of(-1, -6, -3, -3);
 		//concat()
-		Integer[] arrayObject = Stream.concat(streamEnteros, streamNegativos)
-								.distinct()
-								.sorted()
-								.filter(x -> x % 2 == 0)
-								.toArray(Integer[]::new);
+		//Integer[] arrayObject = Stream.concat(streamEnteros, streamNegativos)
+		//						.distinct()
+	//							.sorted()
+		//						.filter(x -> x % 2 == 0)
+		//						.toArray(Integer[]::new);
 		//System.out.println(Arrays.deepToString(arrayObject));	
 		
 //		Integer[] arrayDeTipoInteger = Arrays.copyOf(arrayObject, arrayObject.length, Integer[].class);
@@ -155,12 +152,12 @@ public class Test {
 //			System.out.println(i);
 //		}
 		
-		double edadMedia = Stream.of(clientes)
-							.collect(Collectors.averagingInt(c -> c.edad()));
+		//double edadMedia = Stream.of(clientes)
+		//					.collect(Collectors.averagingInt(c -> c.edad()));
 		//System.out.println(edadMedia);
 		
-		IntSummaryStatistics sumarioEdad = Stream.of(clientes)
-							.collect(Collectors.summarizingInt(c -> c.edad()));
+		//IntSummaryStatistics sumarioEdad = Stream.of(clientes)
+		//					.collect(Collectors.summarizingInt(c -> c.edad()));
 		//System.out.println(sumarioEdad);
 		
 		String nombres = Arrays.stream(clientes)
