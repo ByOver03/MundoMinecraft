@@ -65,10 +65,10 @@ public class Test {
 		//Sorted
 		//Comparator<Cliente> compCliNombre = (x, y) -> x.nombre.compareTo(y.nombre);
 		//Function<Cliente, String> aDNI = c -> c.DNI;
-//		Arrays.stream(clientes)
-//							.sorted((x, y) -> x.nombre.compareTo(y.nombre))
-//							.map(c -> c.DNI)
-//							.forEach(System.out::println);
+		Arrays.stream(clientes)
+							.sorted((x, y) -> x.nombre.compareTo(y.nombre))
+							.map(c -> c.DNI)
+							.forEach(System.out::println);
 		
 //		long cuantos = Arrays.stream(clientes)
 //							.filter(c -> c.edad > 30)
