@@ -1,7 +1,7 @@
 package primo;
 
 import java.util.ArrayList;
-import java.util.Comparator;
+import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Stream;
 
@@ -26,8 +26,13 @@ public class Test {
         Stream<Integer> s3 = numeros.stream();
         s3.sorted((x,y) -> x-y).filter(a -> a<800 && a>200).forEach(System.out::println);
         //3.A
-        
+        Stream<Integer> list= numeros.stream();
+        List<Integer> lista= list.toList();
+        System.out.println(lista.toString());
         //3.B
+        Stream<Integer> array= numeros.stream();
+        Object[] integers =  array.toArray();
+        System.out.println(Arrays.toString(integers));; 
     }
 
 }

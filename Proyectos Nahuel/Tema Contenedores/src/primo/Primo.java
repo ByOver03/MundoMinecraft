@@ -2,7 +2,6 @@ package primo;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.function.Predicate;
 
 public class Primo {
     static boolean esPrimer(Integer n){
