@@ -1,5 +1,6 @@
 package socios;
 import java.util.Comparator;
+@SuppressWarnings("rawtypes")
 public class ComparaEdades implements Comparator{
 
     @Override

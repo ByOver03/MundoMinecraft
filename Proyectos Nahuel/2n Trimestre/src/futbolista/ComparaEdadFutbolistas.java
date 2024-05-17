@@ -2,6 +2,7 @@ package futbolista;
 
 import java.util.Comparator;
 
+@SuppressWarnings("rawtypes")
 public class ComparaEdadFutbolistas implements Comparator{
     
     public int compare(Object o1, Object o2){

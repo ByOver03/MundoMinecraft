@@ -2,7 +2,7 @@ package ejercicio8;
 
 import java.util.*;
 
-import generar.GeneraCadena;
+//import generar.GeneraCadena;
 
 public class TestCliente {
     public static void main(String[] args) {
@@ -14,7 +14,7 @@ public class TestCliente {
 
         for (int i = 0; i < aClientes.length; i++) {
             try {
-                mapa.put(GeneraCadena.dni(), new DatosCliente(aClientes[i]));
+                //mapa.put(GeneraCadena.dni(), new DatosCliente(aClientes[i]));
             } catch (Exception e) {
                 i--;
             }

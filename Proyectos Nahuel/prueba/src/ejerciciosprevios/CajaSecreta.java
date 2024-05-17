@@ -47,6 +47,7 @@ public class CajaSecreta {
 		}
 		}while(guessusuario!=calculodigitos(cantidadusuario, numeroaleatorio));
 		System.out.println(adivinado);
+		sc.close();
 	}
 	//iniciamos una funcion para hacer el calculo y generar el codigo de la caja secreta
 	public static int calculodigitos(int digitos, int[] numeroaleatorio) {

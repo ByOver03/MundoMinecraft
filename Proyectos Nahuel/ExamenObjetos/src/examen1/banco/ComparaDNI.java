@@ -1,7 +1,7 @@
 package examen1.banco;
 
 import java.util.Comparator;
-
+@SuppressWarnings("rawtypes")
 public class ComparaDNI implements Comparator {
 
     public int compare (Object o1, Object o2){

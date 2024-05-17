@@ -28,5 +28,6 @@ public class TemperaturaYDistancia {
 		System.out.println(centimetros + "cm");
 		//hacemos un syso para obtener el resultado
 		System.out.println(kilometros + "km");
+		sc.close();
 	}
 }

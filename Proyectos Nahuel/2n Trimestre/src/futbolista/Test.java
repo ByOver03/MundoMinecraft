@@ -1,6 +1,7 @@
 package futbolista;
 import java.util.Arrays;
 public class Test {
+    @SuppressWarnings("unchecked")
     public static void main(String[] args) {
         //Array de futbolistas
         Futbolista f1= new Futbolista("41513352p","Nahuel",20,1);

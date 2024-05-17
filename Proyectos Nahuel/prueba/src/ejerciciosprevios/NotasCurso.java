@@ -23,6 +23,7 @@ public class NotasCurso {
 		//Le damos al usuario el resultado de la media de su nota
 		System.out.println("Aqui tienes tu nota media del curso: " + notaMedia);
 		System.out.println("Aqui tienes tu nota media redondeada: "+ notaMedia1);
+		sc.close();
 	}
 
 }

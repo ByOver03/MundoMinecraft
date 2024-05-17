@@ -1,6 +1,7 @@
 package circartistic;
 
 public class TestCirc {
+    @SuppressWarnings("unlikely-arg-type")
     public static void main(String[] args) {
         
         //Declaramos los objetos Malabarista Acrobata y PallassoMalabarista como ArtistaCirc para poder utilizarlos en un mismo array

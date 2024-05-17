@@ -20,6 +20,7 @@ public class Binario {
 		 String salida="";
 		 numerobinario=numerousuario;
 		 //Vemos si el numero es positivo o negativo
+		 sc.close();
 		 if(numerousuario>0) {
 			 //Hacemos el bucle necesario para que salga el binario
 			 	for(i= numerobinario; i !=0; i=i/2){
@@ -36,7 +37,7 @@ public class Binario {
 			 System.out.println(error);
 		 }
 		 //Cerramos el Scanner
-		 sc.close();
+		 
 
 	}
 

@@ -4,10 +4,7 @@ import java.security.InvalidParameterException;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -50,13 +47,13 @@ class ArrayListOpTest {
 	@DisplayName("Test array valor null")
 	public void testArrayNull() {
 		assertThrows(InvalidParameterException.class, () -> lista.findClosestToAverage(arrayNulo),
-				"Error, la taula té valor null");
+				"Error, la taula tï¿½ valor null");
 	}
 
 	@Test
-	@DisplayName("Test array vacío")
+	@DisplayName("Test array vacï¿½o")
 	public void testArrayVacio() {
-		assertThrows(InvalidParameterException.class, () -> lista.findClosestToAverage(arrayVacio), "Error, la taula està buida");
+		assertThrows(InvalidParameterException.class, () -> lista.findClosestToAverage(arrayVacio), "Error, la taula estï¿½ buida");
 	}
 	
 	@ParameterizedTest

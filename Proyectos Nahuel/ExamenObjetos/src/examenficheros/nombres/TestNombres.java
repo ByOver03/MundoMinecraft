@@ -42,7 +42,7 @@ public class TestNombres {
             System.out.println(s);
         }
         
-        
+        sc.close();
         
     }
 

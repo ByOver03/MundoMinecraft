@@ -8,6 +8,7 @@ public class BinarioConFunciones {
 		//Iniciamos el int para saber el numero del usuario
 		int numerousuario;
 		//Declaramos los siguientes Strings para mostrarle el texto necesario al usuario
+		@SuppressWarnings("unused")
 		String inicio="Bienvenido, introduce un numero para pasarlo a binario";
 		String error="Lo siento has introducido un valor inadecuado";
 		String numerin="Aqui tienes tu numero en binario: ";
@@ -27,6 +28,7 @@ public class BinarioConFunciones {
 		System.out.println(converisionbinario(numerousuario));
 		
 		}
+		sc.close();
 	}
 	//Creamos la funcion conversion binario para poder hacer la conversion a parte
 	public static int converisionbinario(int binario){

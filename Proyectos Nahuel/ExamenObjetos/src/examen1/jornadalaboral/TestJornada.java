@@ -1,7 +1,5 @@
 package examen1.jornadalaboral;
 
-import java.util.Arrays;
-
 public class TestJornada {
     public static void main(String[] args) {
         

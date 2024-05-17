@@ -8,7 +8,7 @@ public class RaizCuadrada {
 		String salida;
 		String error;
 		int numerousuario;
-		int raiz;
+		
 		
 		explicacion="Aqui te mostraremos la raiz cuadrada de un numero que tu quieras introducir. \nEn caso de que el numero que hayas introducido no sea entero te mostraremos lo que le falta para que pueda hacerse la raiz cuadrada.";
 		bienvenida="Introduce un numero para hacerle la raiz cuadrada";

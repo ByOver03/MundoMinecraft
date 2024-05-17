@@ -151,5 +151,7 @@ public class MenuAgenda {
                 }
             }
          }
+         sc.close();
     }
+    
 }

@@ -18,6 +18,7 @@ public class Elevado {
 	//Despues de esto le damos el resultado con dos tipos de operaciones diferentes
 	System.out.println("Aqui tienes el resultado hecho con una funcion recursiva: "+calculorecursivo(numerousuario,elevacionusuario));
 	System.out.println("Aqui tienes el resultaso hecho con una funcion no recursiva: "+ calculonorecursivo(numerousuario,elevacionusuario));
+	sc.close();
 }
 	
 	//Declaramos el primer tipo de funcion que seria recursivo

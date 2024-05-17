@@ -26,6 +26,7 @@ public class TestEspectacleMagic {
 		String nomMag= sc.next();
 		
 		//Declaramos el objeto para registrar la informacion del truco establecido por el mago
+		@SuppressWarnings("unused")
 		TrucMagic t= new TrucMagic(nomtruc, dificultattruc, espectacularitattruc, comptadortrucs);
 		
 		//Declaramos el objeto Mag

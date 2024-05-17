@@ -2,7 +2,6 @@ package tema8.src.ejercicio3;
 
 import java.util.Scanner;
 
-import javax.sql.rowset.spi.SyncFactory;
 
 public class Test {
     public static void main(String[] args) {

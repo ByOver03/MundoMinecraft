@@ -42,7 +42,6 @@ public class TestOcurrencias {
     public static void leerFicheroPorCaracteres(String fichero, int contador){
         
         try{
-        FileReader fr= new FileReader(fichero);
         }catch(Exception e){
             
         }

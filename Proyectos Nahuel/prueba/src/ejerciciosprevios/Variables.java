@@ -6,6 +6,7 @@ public class Variables {
 	
 
 	
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 	
 			//Declaramos e iniciamos una entrada de datos
@@ -27,6 +28,7 @@ public class Variables {
 			
 			
 			System.out.println("Perfecto " + nombre + ", hoy te chupo el pito");
+			sc.close();
 	}
 
 }

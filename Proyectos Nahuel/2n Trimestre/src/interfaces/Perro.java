@@ -8,7 +8,7 @@ public class Perro  implements Sonido{
 
     @Override
     public void voz() {
-        // TODO Auto-generated method stub
+        
         System.out.println("MIAU");
     }
 

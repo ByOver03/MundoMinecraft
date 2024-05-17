@@ -43,7 +43,7 @@ public class Capturas {
 		//Al final le diremos al usuario la cantidad de capturas aptas y no aptas
 		salida= "Este es el numero de capturas aptas: "+ aptos+ "\nEste es el numero de capturas no aptas: "+noaptos;
 		System.out.println(salida);
-		
+		sc.close();
 	}
 	/*Con esta funcion declararemos si las capturas son aptas
 	 * Si la captura supera los 50 kg le diremos que devuelva true

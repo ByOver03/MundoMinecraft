@@ -3,6 +3,7 @@ package socios;
 import java.util.Arrays;
 
 public class Test {
+    @SuppressWarnings("unchecked")
     public static void main(String[] args) {
         Socio s1= new Socio(3, "Nahuel", "17-02-2003");
         Socio s2 =new Socio(1, "Yoshwa", "27-01-2004");

@@ -1,6 +1,6 @@
 package tema8.src.ejercicio4;
 
-import java.io.BufferedInputStream;
+
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;

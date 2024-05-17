@@ -1,5 +1,4 @@
 package TemaObjetos;
-import java.util.*;
 public class ArraysBidimensionales {
 	public static void main(String[]args) {
 		

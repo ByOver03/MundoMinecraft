@@ -5,6 +5,7 @@ public class test {
 	public static void main(String[]args) {
 		
 		Persona p= new Persona("Mario", 42, 2.00);
+		@SuppressWarnings("unused")
 		Persona q= new Persona();
 		Persona r= new Persona("Nahuel");
 		Persona s= new Persona(20);

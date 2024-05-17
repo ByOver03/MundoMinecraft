@@ -31,6 +31,7 @@ public class Plantilla{
         
         Jugador j= new Jugador(nombre, edad, dni, pos);
         plantilla.put(dorsal, j);
+        read.close();
     }
 
     //Metodo para eliminar a un jugador
@@ -50,6 +51,7 @@ public class Plantilla{
 
     //Metodo para mostrar a loso jugadores con la misma posicion
     static void mostrar(Map<Integer,Jugador> plantilla, String posicion){
+        @SuppressWarnings("unused")
         Posicion pos = null;
         
         switch (posicion) {
@@ -76,6 +78,7 @@ public class Plantilla{
     static boolean editarJugador(Map <Integer,Jugador> plantilla, Integer dorsal){
         Scanner read= new Scanner(System.in);
         String nombre= read.nextLine();
+        @SuppressWarnings("unlikely-arg-type")
         String dni = plantilla.get(nombre).getDni();
         int edad = read.nextInt();
         String posicion= read.next();
@@ -101,6 +104,7 @@ public class Plantilla{
         Jugador j= new Jugador(nombre, edad, dni, pos);
         plantilla.remove(dorsal);
         plantilla.put(dorsal, j);
+        read.close();
         return true;
 
     }

@@ -2,7 +2,7 @@ package examen1.jornadalaboral;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-
+@SuppressWarnings("rawtypes")
 public class Jornada implements Comparable{
     
     //Atributos

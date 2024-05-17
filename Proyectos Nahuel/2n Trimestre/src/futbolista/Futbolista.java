@@ -1,5 +1,5 @@
 package futbolista;
-import socios.ComparaEdades;
+@SuppressWarnings("rawtypes")
 public class Futbolista implements Comparable{
 
     //Atributos

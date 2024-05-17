@@ -2,7 +2,7 @@ package teleco;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-
+@SuppressWarnings("rawtypes")
 public class Telefonada implements Comparable{
     
     //Atributos
@@ -41,6 +41,7 @@ public class Telefonada implements Comparable{
     //Metodo para determinar el coste de la llamada
     public int costeLlamada(){
         int duracionllamada= duracionLlamada();
+        @SuppressWarnings("unused")
         int coste;
         switch (zona) {
              case ZONA1:

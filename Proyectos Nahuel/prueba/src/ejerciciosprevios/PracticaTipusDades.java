@@ -5,13 +5,13 @@ public class PracticaTipusDades {
 	
 		int valorlnt = 20;
 		//Aqui introduzco la variable valorlnt y le doy el valor 20
-		valorlnt = ++valorlnt ;
+		valorlnt = +valorlnt ;
 		//Le añado una unidad a la variable valorlnt añadiendo el prefijo "++"
 		String valorString = "Java";
 		//introduzco la variable valorString y le doy el valor Java
 		double valorDouble = 23.63;
 		//introduzco la variable valorDouble y le doy el valor 23.63
-		valorDouble= --valorDouble;
+		valorDouble= -valorDouble;
 		//Decremento una unidad a la variable valorDouble añadiendo el prefijo "--"
 		System.out.println(valorlnt);
 		//Hago un "syso" para ver el resultado de la variable

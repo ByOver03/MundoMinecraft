@@ -35,6 +35,7 @@ public static void main(String[]args) {
 	}else if(mero.equalsIgnoreCase(pescadousuario)){
 		System.out.println(meroexplicacion);
 	}
+	sc.close();
 }
 	
 

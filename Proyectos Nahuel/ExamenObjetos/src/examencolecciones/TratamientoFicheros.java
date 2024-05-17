@@ -20,6 +20,7 @@ public class TratamientoFicheros {
     }
 
     //Metodo para leer el fichero binario
+    @SuppressWarnings("unchecked")
     public static Map<Integer, Jugador> llegirPersonatges(String fichero) {
         Map<Integer, Jugador> plantilla= null;
 

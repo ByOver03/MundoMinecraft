@@ -10,7 +10,7 @@ public class Test {
         System.out.print("El gato dice: ");
         g.voz();
 
-        System.out.println(p.VERSION);
+        System.out.println(Sonido.VERSION);
 
         p.vozDurmiendo();
 

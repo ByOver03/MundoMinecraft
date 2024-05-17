@@ -10,6 +10,7 @@ public class Test {
         //Declaramos el fichero
         String file = "plantilla.dat";
         //Mostramos la informacion del fichero
+        @SuppressWarnings("unused")
         Map <Integer, Jugador> plantilla2 = TratamientoFicheros.llegirPersonatges(file);
 //        for (Integer string : plantilla2.keySet()) {
 //            System.out.println("Dorsal: " + string + " Jugador: " + plantilla2.get(string).toString());
@@ -18,6 +19,7 @@ public class Test {
         Map<Integer, Jugador> plantilla= new HashMap<>();
         Scanner read = new Scanner(System.in);
         MetodosAuxiliares aux = new MetodosAuxiliares();
+        @SuppressWarnings("unused")
         Map <Integer, Jugador> plantilla3 = TratamientoFicheros.llegirPersonatges(file);
         //Mostramos el menu y guardamos las respuestas
         aux.menu();

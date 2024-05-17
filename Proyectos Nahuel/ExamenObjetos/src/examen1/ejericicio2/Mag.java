@@ -1,5 +1,4 @@
 package examen1.ejericicio2;
-import java.util.Arrays;
 
 public class Mag {
 	

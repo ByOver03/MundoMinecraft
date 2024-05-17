@@ -3,6 +3,7 @@ package examen1.banco;
 import java.util.Arrays;
 
 public class TestBanco {
+    @SuppressWarnings("unchecked")
     public static void main(String[] args) {
         Persona p1= new Persona("41513352P", "Nahuel", true, false, 0, 3135434);
         Persona p2= new Persona("41513353Q", "Robo", false, true, 7, 0);

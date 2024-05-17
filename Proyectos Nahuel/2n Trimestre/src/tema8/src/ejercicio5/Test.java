@@ -1,6 +1,6 @@
 package tema8.src.ejercicio5;
 
-import java.util.Arrays;
+
 import java.util.Scanner;
 import tema8.src.binarioObjeto.GestionFicheros;
 

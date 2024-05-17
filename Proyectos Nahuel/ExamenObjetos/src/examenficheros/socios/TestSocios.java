@@ -41,6 +41,7 @@ public class TestSocios {
         for (Socio socio : leerFicheroObjectToArrayClass(fichero)) {
             System.out.println(socio);
         }
+        sc.close();
 
     }
     
