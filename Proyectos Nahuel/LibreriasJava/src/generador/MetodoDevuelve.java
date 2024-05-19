@@ -1,9 +1,12 @@
 package generador;
 
+
 import java.util.Map;
 
+import java.util.function.Function;
+
 public class MetodoDevuelve {
-    Map<Integer, > registro;
+    Map<Integer, Function<?,?>> registro;
     public static void añadirMetodo(){
 
     }
