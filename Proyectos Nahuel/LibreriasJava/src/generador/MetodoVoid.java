@@ -20,6 +20,7 @@ public class MetodoVoid<T> {
     }
 
     //Metodo para añadir voids
+    //Los metodos añadidos deben ser genericos para evitar los errores posibles del codigo
     public static <T> void añadirMetodo(Integer num, Consumer<T> metodo) {
         metodos.put(num, metodo);
     }
