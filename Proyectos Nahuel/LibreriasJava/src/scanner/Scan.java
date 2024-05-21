@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Scan {
 
-	public static int ScannerInteger(int integer) {
+	public static Integer ScannerInteger(Integer integer) {
 		Scanner leer = new Scanner(System.in);
 		integer = leer.nextInt();
 		leer.close();
@@ -14,7 +14,7 @@ public class Scan {
 
 	public static String ScannerString (String string) {
 		Scanner leer = new Scanner(System.in);
-		string = leer.next();
+		string = leer.nextLine();
 		leer.close();
 		return string;
 	}
