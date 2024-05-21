@@ -1,6 +1,4 @@
 package generador;
-import java.util.function.Function;
-import java.util.Scanner;
 import scanner.Scan;
 public class GeneradorDeMenus {
 
@@ -36,33 +34,7 @@ public class GeneradorDeMenus {
             }
         } while (menu.length-1!=usuario);
     }
-    public static String devuelveString(String parametro){
-        System.out.println("Escriba un parametro");
-        String string= "";
-        string = Scan.ScannerString(string);
-        return string;
-    }
-    
-    public static Integer devuelveInteger(Integer parametro){
-        System.out.println("Introduzca un parametro para devolverlo");
-        Scanner leer = new Scanner(System.in);
-        parametro = leer.nextInt();
-        leer.close();
-        return parametro;
-    }
-    
 
-    public static void main(String[] args) {
-        
-        String[] menu= {"kdsksnv", "String", "int", "salir"};
-        Function<String,String> metodo= GeneradorDeMenus::devuelveString;
-        String parametro="";
-        MetodoDevuelve.añadirMetodo(1, metodo);
-        Function<Integer,Integer> metodo2 = GeneradorDeMenus::devuelveInteger;
-        MetodoDevuelve.añadirMetodo(2, metodo2);
-        chichaMenu(menu, parametro);
-        
-    }
 
 }
 
