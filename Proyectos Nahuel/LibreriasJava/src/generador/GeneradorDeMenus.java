@@ -3,7 +3,6 @@ import java.util.Scanner;
 import java.util.function.Consumer;
 import java.util.function.Function;
 
-import scanner.Scan;
 public class GeneradorDeMenus {
 
     //Metodo que Imprime un menu de forma visual
@@ -23,6 +22,14 @@ public class GeneradorDeMenus {
         }
         System.out.println("*********************************************************");
     }
+    /**
+     * Este metodo es todo el cerebo del menu, tienes que añadir previamente los metodos que quieras establecer
+     * El primer parametro que establezcas en el array de String no se mostrara ya que por defecto el primer parametro se establecera como introduce una opcion
+     * @param <T>
+     * introduce un array de Strings y un parametro que sera el necesario para inicializar los metodos
+     * @param menu
+     * @param parametro
+     */
     public static <T>void chichaMenu(String[] menu,T parametro){
         int usuario=0;
         Scanner leer = new Scanner(System.in);
@@ -38,43 +45,6 @@ public class GeneradorDeMenus {
             }
         } while (menu.length-1!=usuario);
         leer.close();
-    }
-
-    public static String devuelveString(String parametro){
-        System.out.println("Escriba un parametro");
-        Scanner leer = new Scanner(System.in);
-        String string= leer.nextLine();
-        leer.close();
-        
-        return string;
-    }
-    
-    public static Integer devuelveInteger(Integer parametro){
-        System.out.println("Introduzca un parametro para devolverlo");
-        Scanner leer = new Scanner(System.in);
-        parametro = leer.nextInt();
-        leer.close();
-        return parametro;
-    }
-    public static void mensaje(String msg){
-        Scanner leer = new Scanner(System.in);
-        System.out.println("Escribe un Mensaje para devolver");
-        msg = leer.next();
-        System.out.println(msg);
-    }
-    
-
-    public static void main(String[] args) {
-        
-        String[] menu= {"kdsksnv", "String", "int","mensaje" , "salir"};
-        Function<String,String> metodo= GeneradorDeMenus::devuelveString;
-        String parametro="asd";
-        MetodoDevuelve.añadirMetodo(1, metodo);
-        Function<Integer,Integer> metodo2 = GeneradorDeMenus::devuelveInteger;
-        MetodoDevuelve.añadirMetodo(2, metodo2);
-        Consumer<String> metodo3 = GeneradorDeMenus::mensaje;
-        MetodoVoid.añadirMetodo(3, metodo3);
-        chichaMenu(menu, parametro);
         
     }
 }
