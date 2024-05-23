@@ -4,37 +4,36 @@ import java.util.Scanner;
 
 public class Scan {
 
-	public static int ScannerInteger(int integer) {
+	@SuppressWarnings("resource")
+	public static Integer ScannerInteger(Integer integer) {
 		Scanner leer = new Scanner(System.in);
 		integer = leer.nextInt();
-		leer.close();
 		return integer;
 	}
 	
-
+	@SuppressWarnings("resource")
 	public static String ScannerString (String string) {
 		Scanner leer = new Scanner(System.in);
-		string = leer.next();
-		leer.close();
+		string = leer.nextLine();
 		return string;
 	}
+	@SuppressWarnings("resource")
 	public static double Scannerdouble(double doble){
 		Scanner leer = new Scanner(System.in);
 		doble = leer.nextDouble();
-		leer.close();
 		return doble;
 	}
+	@SuppressWarnings("resource")
 	public static boolean ScannerBoolean(boolean sino){
 		Scanner leer = new Scanner(System.in);
 		sino= leer.nextBoolean();
-		leer.close();
 		return sino;
 	}
+	@SuppressWarnings("resource")
 	public static char DevuelveChar(char character){
 		Scanner leer= new Scanner(System.in);
 		String caracter = leer.nextLine();
 		character = caracter.charAt(0);
-		leer.close();
 		return character;
 	}
 

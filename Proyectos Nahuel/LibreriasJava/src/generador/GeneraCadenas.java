@@ -1,6 +1,6 @@
 package generador;
 
-public class GeneraDNIs {
+public class GeneraCadenas {
 
     public static String generadorDNIs(){
         String s ="";
