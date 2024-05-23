@@ -1,7 +1,5 @@
 package generador;
-import java.util.Scanner;
-import java.util.function.Consumer;
-import java.util.function.Function;
+import scanner.Scan;
 
 public class GeneradorDeMenus {
 
@@ -32,19 +30,19 @@ public class GeneradorDeMenus {
      */
     public static <T>void chichaMenu(String[] menu,T parametro){
         int usuario=0;
-        Scanner leer = new Scanner(System.in);
+        
         
         do {
             System.out.println("Introduzca un parametro para confirmar la operacion");
             generaMenus(menu);
-            usuario= leer.nextInt();
+            usuario= Scan.ScannerInteger(usuario);
             if(MetodoDevuelve.getRegistro().containsKey(usuario)){
                 MetodoDevuelve.ejecutar(usuario, parametro);
             }else if(MetodoVoid.getMetodos().containsKey(usuario)){
                 MetodoVoid.ejecutarMetodo(usuario, parametro);
             }
         } while (menu.length-1!=usuario);
-        leer.close();
+        
         
     }
 }
